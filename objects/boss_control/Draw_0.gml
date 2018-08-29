@@ -1,0 +1,1 @@
+/*draw_text(x,y,boss_state)

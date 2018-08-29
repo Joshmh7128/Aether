@@ -1,0 +1,10 @@
+color = c_maroon;
+depth = -1100
+special = 1;
+phase = 0;
+unlock = choose(1,2,3); //at the moment, there's a 1 in 3 chance of getting each different one
+//1 = shotgun
+//2 = trishot
+//3 = burst
+unlock_name = "";
+unlock_name_show = "";

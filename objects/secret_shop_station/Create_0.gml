@@ -1,0 +1,9 @@
+local_cost = 0;
+local_player_skin = 0;
+local_skin_set = 0;
+current_torso = spr_PlayerIdleTorso;
+current_head = spr_PlayerHead;
+current_gun = spr_gun;
+current_legs = spr_playerIdle;
+rotate = 0;
+depth = -1100

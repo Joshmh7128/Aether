@@ -1,0 +1,8 @@
+draw_self()
+draw_sprite_ext(current_torso,1,x,y,obj_PlayerTorso.image_xscale,1,0,c_white,1)
+draw_sprite_ext(current_head,1,x,y-20,obj_PlayerHead.image_xscale,obj_PlayerHead.image_yscale,obj_PlayerHead.image_angle,c_white,1)
+draw_sprite_ext(current_legs,1,x,y,obj_Player.image_xscale,1,0,c_white,1)
+draw_sprite_ext(current_gun,1,x+(7*sign(obj_gun.image_yscale)),y-8,obj_gun.image_xscale,obj_gun.image_yscale,obj_gun.image_angle,c_white,1)
+draw_set_font(font_2)
+draw_text(x-24,y-120,local_cost)
+draw_sprite_ext(spr_secret_white,1,x+24,y-80,1,1,rotate,c_white,1)

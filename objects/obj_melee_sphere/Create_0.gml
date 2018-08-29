@@ -1,0 +1,9 @@
+vsp = 0;
+hsp = 0;
+grav = 0.7;
+angle = 0;
+hp = 6;
+control = 1;
+check_range = 1000;
+maxspeed = 3;
+//alarm[0] = 300;

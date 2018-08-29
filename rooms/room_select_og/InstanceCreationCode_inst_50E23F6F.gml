@@ -1,0 +1,1 @@
+room_dest = room_cyan_boss

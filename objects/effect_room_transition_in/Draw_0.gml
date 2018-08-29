@@ -1,0 +1,1 @@
+draw_sprite_stretched_ext(spr_transition,1,x-1500,y-1500,3000,3000,c_white,1)

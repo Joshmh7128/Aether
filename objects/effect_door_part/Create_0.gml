@@ -1,0 +1,1 @@
+global.door_part = part_system_create()

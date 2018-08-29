@@ -1,0 +1,1 @@
+global.wall_amount = 0

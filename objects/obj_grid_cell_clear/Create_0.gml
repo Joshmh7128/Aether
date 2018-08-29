@@ -1,0 +1,1 @@
+mp_grid_clear_cell(global.grid,floor(x/16),floor(y/16))

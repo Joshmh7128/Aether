@@ -1,0 +1,1 @@
+depth = effect_playerLighting.depth - 1

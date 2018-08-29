@@ -1,0 +1,21 @@
+nofire = 0;
+nofire2 = 0;
+charge = 100;
+maxcharge = 100;
+percharge = 0
+bolt_charge = 0;
+specialcharge = 0;
+pickupcolor = c_fuchsia;
+phy = 0
+burst_count = 0;
+automatic_alarm = 25;
+depth = -10000
+/* THESE ARE DETERMINED IN obj_player_stats
+global.firemode = 1;
+global.bullet_amount = 0;
+global.bolt_hold = 0;
+global.special = 1;
+//1 = shotgun
+//2 = flamethrower
+//3 = homing
+//4 = jetpack

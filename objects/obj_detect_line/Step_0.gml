@@ -1,0 +1,1 @@
+image_angle = obj_enemy_detector.direction

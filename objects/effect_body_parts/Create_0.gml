@@ -1,0 +1,12 @@
+depth = -9001
+spina = random_range(-3,3)
+spinb = random_range(-3,3)
+spinc = random_range(-3,3)
+tx = x;
+ty = y;
+ax = x;
+ay = y;
+hx = x;
+hy = y;
+alarm[0] = 1;
+alarm[1] = 60;

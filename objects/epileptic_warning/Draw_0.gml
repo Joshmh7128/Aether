@@ -1,0 +1,5 @@
+draw_sprite_ext(spr_gif_background,image_index/2.5,960,540,4,4,0,c_white,1)
+draw_set_color(c_white)
+draw_set_font(font_5)
+draw_set_halign(fa_center)
+draw_text(x,y,current_message)

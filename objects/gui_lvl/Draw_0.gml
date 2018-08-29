@@ -1,0 +1,5 @@
+draw_set_color(c_white)
+draw_set_font(font_2)
+draw_text(x,y,lvl_name)
+draw_set_font(font_1)
+draw_text(x,y+70,ver)

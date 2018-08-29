@@ -1,0 +1,1 @@
+special = obj_spc_shotgun;

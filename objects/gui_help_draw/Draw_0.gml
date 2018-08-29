@@ -1,0 +1,6 @@
+draw_set_color(c_black)
+draw_rectangle(0,0,1920,1080,false)
+draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_set_font(font_3)
+draw_text(room_width/2,0,current_message)

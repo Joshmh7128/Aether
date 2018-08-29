@@ -1,0 +1,5 @@
+draw_set_font(font_3)
+draw_text(530,805,"Hey good job you finished it")
+draw_text(1410,720,"There's nothing here. Stop it.")
+draw_text(2080,750,"I suppose you want to fall forever, ye?")
+draw_text(1960,19980,"lol hey")
