@@ -20,15 +20,10 @@ if (hp <= 0)
 
 if (hp >= 2)
 {
-sprite_index = spr_wallB3;
+	image_index = 0;
 }
 
 if (hp <= 1)
 {
-sprite_index = spr_wallB1;
+	image_index = 1;
 }
-/*
-//layer adjustment 
-checkdir = point_direction(x,y,global.playerx,global.playery);
-target = collision_line(x,y,x+lengthdir_x(1280,checkdir),y+lengthdir_y(1280,checkdir),par_player,true,true)
-

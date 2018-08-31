@@ -10,12 +10,7 @@ draw_triangle(x-16,y+16,x-16+ld_dirxa,y+16+ld_dirya,x-16+lt_dirxa,y-16+lt_dirya,
 draw_triangle(x+16,y+16,x+16,y-16,x+16+rd_dirxa,y+16+rd_dirya,0);
 draw_triangle(x+16,y-16,x+16+rt_dirxa,y-16+rt_dirya,x+16+rd_dirxa,y+16+rd_dirya,0);
 
-//read the dev mode
-if global.dev_mode != 0
+if debug_mode = true
 {
-	visible = 0
-}
-else
-{
-	visible = 1
-};
+	visible = false;
+}	

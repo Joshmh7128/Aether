@@ -14,12 +14,8 @@ draw_triangle(x+16,y-256,x+16+lengthdir_x(draw_distance,point_rt),y-256+lengthdi
 
 draw_rectangle(x-15,y-15,x+15,y+15,0)
 draw_set_alpha(1);
-/*
-if global.dev_mode != 0
+
+if debug_mode = true
 {
-visible = 0
-}
-else
-{
-visible = 1
-};
+	visible = false;
+}	

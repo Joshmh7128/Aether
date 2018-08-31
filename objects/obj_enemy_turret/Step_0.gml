@@ -1,7 +1,15 @@
 move_bounce_all(false)
-//determine direction, targets, ect
-checkdir = point_direction(x,y,global.playerx,global.playery);
-launch_dir = checkdir * -1;
+
+if !collision_line(x,y,obj_Player.x, obj_Player.y,par_all_wall,1,0)
+{
+	aim = true;
+}
+else
+{
+	aim = false;	
+}
+
+/*
 
 if !collision_line(x,y,obj_Player.x,obj_Player.y,par_all_wall,false,true) 
 {

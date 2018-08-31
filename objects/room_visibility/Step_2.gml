@@ -6,3 +6,8 @@ else
 {
     visible=false;
 }
+
+if debug_mode = true
+{
+	visible = false;	
+}

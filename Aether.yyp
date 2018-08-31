@@ -1119,6 +1119,14 @@
             }
         },
         {
+            "Key": "2d399617-cc6e-49c2-ad88-c467eb33e14d",
+            "Value": {
+                "id": "d93d3bda-5c04-477e-9385-df5ee6552df2",
+                "resourcePath": "objects\\obj_enemy_turret22\\obj_enemy_turret22.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2da77931-11b9-4f2f-9923-ef5dd4441832",
             "Value": {
                 "id": "e7f8cb11-48c0-4d75-a5a5-c21e34246eec",
@@ -4274,7 +4282,7 @@
             "Key": "b0d254e2-b61d-45c4-9790-f0eca630e36c",
             "Value": {
                 "id": "563e912e-d9b8-47a7-b1cd-c7e1aa00f87c",
-                "resourcePath": "sprites\\spr_wallB3\\spr_wallB3.yy",
+                "resourcePath": "sprites\\spr_wallB\\spr_wallB.yy",
                 "resourceType": "GMSprite"
             }
         },
