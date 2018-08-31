@@ -42,3 +42,19 @@ if global.dev_mode != 0
 {
 	draw_line_width_colour(x, y, global.playerx, global.playery, 1, c_red, c_red);
 }
+
+
+//draw some dev stuff for the aim bool
+if global.dev_mode != 0
+{
+	if aim
+	{
+		draw_set_color(c_lime)
+		draw_rectangle(x-28,y-28,x+28,y+28,false)
+	}
+	else
+	{
+		draw_set_color(c_red)
+		draw_rectangle(x-28,y-28,x+28,y+28,false)
+	}
+}

@@ -1,10 +1,5 @@
-if !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall_long_h,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall_long_v,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall_med_h,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall_med_v,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wallB,0,0)
-and !collision_line(x,y,obj_Player.x, obj_Player.y,obj_wall_white,0,0)
+if !collision_line(x,y,obj_Player.x, obj_Player.y,par_wall,0,0)
+and !collision_line(x,y,obj_Player.x, obj_Player.y,par_enemywall,0,0)
 {
 	return true;	
 }
