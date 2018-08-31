@@ -2,16 +2,12 @@
 move_bounce_all(false)
 target_dir = point_direction(x,y,global.playerx,global.playery);
 
-if !collision_line(x+16,y-16,global.playerx+16,global.playery+16,par_wall,false,true) 
-&& !collision_line(x+16,y+16,global.playerx+16,global.playery+16,par_wall,false,true) 
-&& !collision_line(x-16,y-16,global.playerx-16,global.playery-16,par_wall,false,true) 
-&& !collision_line(x+16,y+16,global.playerx+16,global.playery+16,par_enemywall,false,true) 
-&& !collision_line(x-16,y-16,global.playerx-16,global.playery-16,par_enemywall,false,true)  
-&& !collision_line(x-16,y+16,global.playerx-16,global.playery-16,par_enemywall,false,true)
+if wallCheck() = true
 {
 	seen = true
 }
-else
+
+if wallCheck() = false
 {
 	seen = false
 }

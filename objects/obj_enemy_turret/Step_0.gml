@@ -1,5 +1,16 @@
 move_bounce_all(false)
 
+if wallCheck() = true
+{
+	aim = true;	
+}
+
+if wallCheck() = false
+{
+	aim = false;	
+}
+
+/*
 if !collision_line(x,y,obj_Player.x, obj_Player.y,par_all_wall,1,0)
 {
 	aim = true;
