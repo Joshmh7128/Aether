@@ -1122,7 +1122,7 @@
             "Key": "2d399617-cc6e-49c2-ad88-c467eb33e14d",
             "Value": {
                 "id": "d93d3bda-5c04-477e-9385-df5ee6552df2",
-                "resourcePath": "objects\\obj_enemy_turret\\obj_enemy_turret.yy",
+                "resourcePath": "objects\\obj_enemy_turret_hold\\obj_enemy_turret_hold.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1642,7 +1642,7 @@
             "Key": "41841d4a-8747-493f-81cd-836512facb63",
             "Value": {
                 "id": "64f7c7d8-2a27-4ef5-b3ad-7a8a72230594",
-                "resourcePath": "objects\\obj_enemy_turret_detector\\obj_enemy_turret_detector.yy",
+                "resourcePath": "objects\\obj_enemy_turret\\obj_enemy_turret.yy",
                 "resourceType": "GMObject"
             }
         },

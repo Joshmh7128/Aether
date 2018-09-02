@@ -3,9 +3,10 @@
 //get direction and distance to the player
 cd = point_distance(x,y,obj_Player.x,obj_Player.y);
 ca = point_direction(x,y,obj_Player.x,obj_Player.y);
+image_index = spr_32_line;
 image_angle = ca;
-//get the check increment (take the entire line from the center of the checking object to the player, and 
-//make it into 25 points.
+//get the check increment (take the entire line from the center of the
+//checking object to the player, and make it into 25 points.
 p1c		= (cd/25)*1; //this will be 1 increment away from the object
 p2c		= (cd/25)*2; //this will be 2 increment away from the object
 p3c		= (cd/25)*3; //this will be 3 increment away from the object
@@ -109,32 +110,31 @@ p25x = x+lengthdir_x(p25c,ca);
 p25y = y+lengthdir_y(p25c,ca);
 
 //check each position for place_free
-if 
-!place_meeting(p1x,p1y,par_all_wall) and
-!place_meeting(p2x,p2y,par_all_wall) and
-!place_meeting(p3x,p3y,par_all_wall) and
-!place_meeting(p4x,p4y,par_all_wall) and
-!place_meeting(p5x,p5y,par_all_wall) and
-!place_meeting(p6x,p6y,par_all_wall) and
-!place_meeting(p7x,p7y,par_all_wall) and
-!place_meeting(p8x,p8y,par_all_wall) and
-!place_meeting(p9x,p9y,par_all_wall) and
-!place_meeting(p10x,p10y,par_all_wall) and
-!place_meeting(p11x,p11y,par_all_wall) and
-!place_meeting(p12x,p12y,par_all_wall) and
-!place_meeting(p13x,p13y,par_all_wall) and
-!place_meeting(p14x,p14y,par_all_wall) and
-!place_meeting(p15x,p15y,par_all_wall) and
-!place_meeting(p16x,p16y,par_all_wall) and
-!place_meeting(p17x,p17y,par_all_wall) and
-!place_meeting(p18x,p18y,par_all_wall) and
-!place_meeting(p19x,p19y,par_all_wall) and
-!place_meeting(p20x,p20y,par_all_wall) and
-!place_meeting(p21x,p21y,par_all_wall) and
-!place_meeting(p22x,p22y,par_all_wall) and
-!place_meeting(p23x,p23y,par_all_wall) and
-!place_meeting(p24x,p24y,par_all_wall) //and
-//!place_meeting(p25x,p25y,par_all_wall) 
+if	!place_meeting(p1x,p1y,par_all_wall) and
+	!place_meeting(p2x,p2y,par_all_wall) and
+	!place_meeting(p3x,p3y,par_all_wall) and
+	!place_meeting(p4x,p4y,par_all_wall) and
+	!place_meeting(p5x,p5y,par_all_wall) and
+	!place_meeting(p6x,p6y,par_all_wall) and
+	!place_meeting(p7x,p7y,par_all_wall) and
+	!place_meeting(p8x,p8y,par_all_wall) and
+	!place_meeting(p9x,p9y,par_all_wall) and
+	!place_meeting(p10x,p10y,par_all_wall) and
+	!place_meeting(p11x,p11y,par_all_wall) and
+	!place_meeting(p12x,p12y,par_all_wall) and
+	!place_meeting(p13x,p13y,par_all_wall) and
+	!place_meeting(p14x,p14y,par_all_wall) and
+	!place_meeting(p15x,p15y,par_all_wall) and
+	!place_meeting(p16x,p16y,par_all_wall) and
+	!place_meeting(p17x,p17y,par_all_wall) and
+	!place_meeting(p18x,p18y,par_all_wall) and
+	!place_meeting(p19x,p19y,par_all_wall) and
+	!place_meeting(p20x,p20y,par_all_wall) and
+	!place_meeting(p21x,p21y,par_all_wall) and
+	!place_meeting(p22x,p22y,par_all_wall) and
+	!place_meeting(p23x,p23y,par_all_wall) and
+	!place_meeting(p24x,p24y,par_all_wall) //and
+	//!place_meeting(p25x,p25y,par_all_wall) 
 {
 	aim = true;
 }
@@ -143,24 +143,10 @@ else
 	aim = false;
 }
 
+move_bounce_all(false)
 
-//move_bounce_all(false)
-/*
-if !collision_line(x,y,obj_Player.x, obj_Player.y,par_all_wall,1,0)
-{
-	aim = true;
-}
-else
-{
-	aim = false;	
-}
-
-/*
-
-if !collision_line(x,y,obj_Player.x,obj_Player.y,par_all_wall,false,true) 
-{
-	aim = 1;
-	
+if aim = true
+{	
 	if !alarm[0]
 	{
 		alarm[0] = 40;
@@ -168,8 +154,6 @@ if !collision_line(x,y,obj_Player.x,obj_Player.y,par_all_wall,false,true)
 }
 else
 {
-	aim = 0;	
-	
 	if alarm[0]
 	{
 		alarm[0] = 0;
