@@ -9,4 +9,3 @@ if (instance_exists(obj_Player))
 		mask_index = spr_wall_jumpthrough;
 	}
 }
-

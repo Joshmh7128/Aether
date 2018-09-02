@@ -1,3 +1,4 @@
+instance_create(x,y,obj_enemy_turret_detector);
 //line of sight
 seen = false;
 hp = 5;

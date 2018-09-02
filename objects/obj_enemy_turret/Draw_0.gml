@@ -1,60 +1,8 @@
-//Look at the player 
-sprite_angle = point_direction(x, y, global.playerx, global.playery);
-
-if aim = 1
+if seen == true
 {
-	draw_line_width_color(x,y,global.playerx,global.playery,1,c_red,c_red)
+	draw_line_color(x,y,obj_Player.x,obj_Player.y,c_red,c_red)	
 }
-
-//Sprite Control
-draw_set_alpha(1);
-
-if hp = 5
+else
 {
-	draw_sprite_ext(spr_turret, 0, x, y, 1, 1, sprite_angle, c_white, 1);
-}
-
-if hp = 4
-{
-	draw_sprite_ext(spr_turret, 1, x, y, 1, 1, sprite_angle, c_white, 1);
-}
-
-if hp = 3
-{
-	draw_sprite_ext(spr_turret, 2, x, y, 1, 1, sprite_angle, c_white, 1);
-}
-
-if hp = 2
-{
-	draw_sprite_ext(spr_turret, 3, x, y, 1, 1, sprite_angle, c_white, 1);
-}
-
-if hp = 1
-{
-	draw_sprite_ext(spr_turret, 4, x, y, 1, 1, sprite_angle, c_white, 1);
-}
-
-
-draw_set_alpha(1)
-
-//draw target line
-if global.dev_mode != 0
-{
-	draw_line_width_colour(x, y, global.playerx, global.playery, 1, c_red, c_red);
-}
-
-
-//draw some dev stuff for the aim bool
-if global.dev_mode != 0
-{
-	if aim
-	{
-		draw_set_color(c_lime)
-		draw_rectangle(x-28,y-28,x+28,y+28,false)
-	}
-	else
-	{
-		draw_set_color(c_red)
-		draw_rectangle(x-28,y-28,x+28,y+28,false)
-	}
+	draw_line_color(x,y,obj_Player.x,obj_Player.y,c_white,c_white)	
 }

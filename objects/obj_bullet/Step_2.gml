@@ -9,10 +9,18 @@ if (hit != noone)
     instance_destroy();
 }
 
-hit = instance_place(x,y,par_enemywall)
-if (hit != noone)
+hit_wall = instance_place(x,y,par_enemywall)
+if (hit_wall != noone)
 {
-    hit.hp -= 1;
+    hit_wall.hp -= 1;
+	instance_create(x,y,effect_flash)
+    instance_destroy();
+}
+
+hit_wall_g = instance_place(x,y,obj_wallB)
+if (hit_wall_g != noone)
+{
+    hit_wall_g.hp -= 1;
 	instance_create(x,y,effect_flash)
     instance_destroy();
 }

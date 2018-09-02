@@ -43,6 +43,7 @@ image_index = 1;
 //globals
 global.playerx = 0;
 global.playery = 0;
+global.playerID = id;
 
 //GUI
 global.orbshow = 0;
