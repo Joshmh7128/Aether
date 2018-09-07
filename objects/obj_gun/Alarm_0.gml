@@ -1,1 +1,1 @@
-current_draw = 1
+current_draw = 1;

@@ -24,18 +24,12 @@ if global.dev_mode != 0
 		draw_set_color(c_yellow)
 		draw_line(x,y,global.playerx,global.playery)
 	}
-/*
-//use to draw the actual lengthdir check 
-	{
-	draw_set_color(c_white)
-	draw_line(x,y,lengthdir_x(checkrange,checkdir),lengthdir_y(checkrange,checkdir))
-	}
-*/
 }
 
-//draw_line_color(x+16,y+16,global.playerx+16,global.playery+16,c_yellow,c_yellow);
-//draw_line_color(x-16,y-16,global.playerx-16,global.playery-16,c_yellow,c_yellow);
-if seen = true
+if aim = true
 {
 	draw_line_color(x,y,global.playerx,global.playery,c_red,c_red);
+}
+else
+{
 }

@@ -2,28 +2,28 @@ image_angle = point_direction(x, y, obj_mouse.x, obj_mouse.y);
 
 if obj_mouse.x > global.playerx
 {
-image_yscale = 1 * sign(obj_Player.grav_state);
-state = 1;
+	image_yscale = 1 * sign(obj_Player.grav_state);
+	state = 1;
 }
 
 if obj_mouse.x < global.playerx
 {
-image_yscale = -1 * sign(obj_Player.grav_state);
-state = 2;
+	image_yscale = -1 * sign(obj_Player.grav_state);
+	state = 2;
 }
 
 if mouse_check_button_pressed(mb_left)
 {
-alarm[0] = 2;
-alarm[1] = 4;
+	alarm[0] = 1;
+	alarm[1] = 4;
 }
 
 if global.gamepad_mode = 1
 {
-var hraxis = gamepad_axis_value(0, gp_axisrh);
-var vraxis = gamepad_axis_value(0, gp_axisrv);
-point_angle = point_direction(0,0,hraxis, vraxis);
-image_angle = point_angle;
+	var hraxis = gamepad_axis_value(0, gp_axisrh);
+	var vraxis = gamepad_axis_value(0, gp_axisrv);
+	point_angle = point_direction(0,0,hraxis, vraxis);
+	image_angle = point_angle;
 }
 
 gun_point_x = x+25
