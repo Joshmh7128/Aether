@@ -598,75 +598,15 @@ if global.dev_mode = 1
 	{
 		room_goto(room_blue_7)
 	}
-	
-	
-	//Maroon Room commands
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("1"))
-	{
-		room_goto(room_maroon_1)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("2"))
-	{
-		room_goto(room_maroon_2)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("3"))
-	{
-		room_goto(room_maroon_3)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("4"))
-	{
-		room_goto(room_maroon_4)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("5"))
-	{
-		room_goto(room_maroon_5)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("6"))
-	{
-		room_goto(room_maroon_6)
-	}
-	
-	if keyboard_check_direct(ord("M")) && keyboard_check_direct(ord("7"))
-	{
-		room_goto(room_maroon_7)
-	}
-
-	//green room commadns
-	if keyboard_check_direct(ord("N")) && keyboard_check_direct(ord("1"))
-	{
-		room_goto(room_green_1)
-	}
-	
-	if keyboard_check_direct(ord("N")) && keyboard_check_direct(ord("2"))
-	{
-		room_goto(room_green_2)
-	}
-
-	if keyboard_check_direct(ord("N")) && keyboard_check_direct(ord("3"))
-	{
-		room_goto(room_green_3)
-	}
-	
-	if keyboard_check_direct(ord("N")) && keyboard_check_direct(ord("4"))
-	{
-		room_goto(room_green_4)
-	}
-	
-	
-	//others
-	if keyboard_check_direct(ord("J")) && keyboard_check_direct(ord("1"))
-	{
-		room_goto(room_dark_1)
-	}
 
 	if keyboard_check_direct(ord("K")) && keyboard_check_direct(ord("1"))
 	{
 		room_goto(room_red_1)
+	}
+	
+	if keyboard_check_direct(ord("T")) && keyboard_check_direct(ord("1"))
+	{
+		room_goto(room_testing)
 	}
 	
 

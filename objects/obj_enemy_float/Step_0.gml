@@ -140,12 +140,16 @@ if	!place_meeting(p1x,p1y,par_all_wall) and
 	!place_meeting(p24x,p24y,par_all_wall) //and
 	//!place_meeting(p25x,p25y,par_all_wall) 
 {
-	aim = true;
+	if distance_to_point(obj_Player.x,obj_Player.y) < 1200
+	{
+		aim = true;
+	}
+	else
+	{
+		aim = false;
+	}
 }
-else
-{
-	aim = false;
-}
+
 
 if aim = true
 {

@@ -111,36 +111,39 @@ p25y = y+lengthdir_y(p25c,ca);
 
 //check each position for place_free
 if	!place_meeting(p1x,p1y,par_all_wall) and
-	!place_meeting(p2x,p2y,par_all_wall) and
-	!place_meeting(p3x,p3y,par_all_wall) and
-	!place_meeting(p4x,p4y,par_all_wall) and
-	!place_meeting(p5x,p5y,par_all_wall) and
-	!place_meeting(p6x,p6y,par_all_wall) and
-	!place_meeting(p7x,p7y,par_all_wall) and
-	!place_meeting(p8x,p8y,par_all_wall) and
-	!place_meeting(p9x,p9y,par_all_wall) and
-	!place_meeting(p10x,p10y,par_all_wall) and
-	!place_meeting(p11x,p11y,par_all_wall) and
-	!place_meeting(p12x,p12y,par_all_wall) and
-	!place_meeting(p13x,p13y,par_all_wall) and
-	!place_meeting(p14x,p14y,par_all_wall) and
-	!place_meeting(p15x,p15y,par_all_wall) and
-	!place_meeting(p16x,p16y,par_all_wall) and
-	!place_meeting(p17x,p17y,par_all_wall) and
-	!place_meeting(p18x,p18y,par_all_wall) and
-	!place_meeting(p19x,p19y,par_all_wall) and
-	!place_meeting(p20x,p20y,par_all_wall) and
-	!place_meeting(p21x,p21y,par_all_wall) and
-	!place_meeting(p22x,p22y,par_all_wall) and
-	!place_meeting(p23x,p23y,par_all_wall) and
-	!place_meeting(p24x,p24y,par_all_wall) //and
-	//!place_meeting(p25x,p25y,par_all_wall) 
+!place_meeting(p2x,p2y,par_all_wall)	 and
+!place_meeting(p3x,p3y,par_all_wall)	 and
+!place_meeting(p4x,p4y,par_all_wall)	 and
+!place_meeting(p5x,p5y,par_all_wall)	 and
+!place_meeting(p6x,p6y,par_all_wall)	 and
+!place_meeting(p7x,p7y,par_all_wall)	 and
+!place_meeting(p8x,p8y,par_all_wall)	 and
+!place_meeting(p9x,p9y,par_all_wall)	 and
+!place_meeting(p10x,p10y,par_all_wall)	 and
+!place_meeting(p11x,p11y,par_all_wall)	 and
+!place_meeting(p12x,p12y,par_all_wall)	 and
+!place_meeting(p13x,p13y,par_all_wall)	 and
+!place_meeting(p14x,p14y,par_all_wall)	 and
+!place_meeting(p15x,p15y,par_all_wall)	 and
+!place_meeting(p16x,p16y,par_all_wall)	 and
+!place_meeting(p17x,p17y,par_all_wall)	 and
+!place_meeting(p18x,p18y,par_all_wall)	 and
+!place_meeting(p19x,p19y,par_all_wall)	 and
+!place_meeting(p20x,p20y,par_all_wall)	 and
+!place_meeting(p21x,p21y,par_all_wall)	 and
+!place_meeting(p22x,p22y,par_all_wall)	 and
+!place_meeting(p23x,p23y,par_all_wall)	 and
+!place_meeting(p24x,p24y,par_all_wall) //and
+//!place_meeting(p25x,p25y,par_all_wall) 
 {
-	aim = true;
-}
-else
-{
-	aim = false;
+	if distance_to_point(obj_Player.x,obj_Player.y) < 1200
+	{
+		aim = true;
+	}
+	else
+	{
+		aim = false;
+	}
 }
 
 move_bounce_all(false)
